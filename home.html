@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220222113226">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			const confectioner = {
+				lat: 54.97527278357389,
+				lng: 73.2487214916878
+			};
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 14,
+				center: confectioner,
+				mapId: 'b62e6d815a6368c5',
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: confectioner,
+				map: map,
+				icon: "img/address/location.svg"
+			});
+		}
+	</script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?_v=20220222113226"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll-show>
+			<div class="header__container">
+				<a href="#/" class="header__logo">
+					<img class="header__img-logo" src="img/header/logo.svg" alt="logo">
+					<img class="header__text-logo" src="img/header/logo-text.svg" alt="hot-cake">
+				</a>
+				<div class="header__nav">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#/" class="menu__link" data-goto="#about-us" data-goto-speed="700" data-goto-header>О
+										нас</a></li>
+								<li class="menu__item"><a href="#/" class="menu__link" data-goto="#catalog" data-goto-speed="700" data-goto-header>Каталог</a></li>
+								<li class="menu__item"><a href="#/" class="menu__link" data-goto="#delivery" data-goto-speed="700" data-goto-header>Доставка</a></li>
+								<li class="menu__item"><a href="#/" class="menu__link" data-goto="#contacts" data-goto-speed="1000" data-goto-header>Контакты</a></li>
+							</ul>
+							<div class="dot"></div>
+							<a data-watch href="tel:+78780966978" class="menu__phone">
+								<lottie-player id="lottie" src="https://assets10.lottiefiles.com/packages/lf20_o4fy9et3.json" background="transparent" speed="0.8" loop autoplay>
+								</lottie-player>
+							</a>
+						</nav>
+					</div>
+					<a class="header__phone" href="tel:+78780966978">
+						+ 7(878) 096 6978
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__content">
+					<div class="main-block__container">
+						<div class="main-block__body">
+							<h1 data-watch class="main-block__title title main-block__title_big">Время заняться
+								<span>кексом</span>
+							</h1>
+							<div class="main-block__subtitle">Крафтовая кондитерская “Горячий кекс”</div>
+							<a href="#/" class="main-block__button button">Заказать</a>
+							<div class="main-block__items">
+								<div class="main-block__item item-main">
+									<div class="item-main__image-ibg">
+										<img src="img/main/image1.svg" alt="">
+									</div>
+									<div class="item-main__label">Изысканный вкус</div>
+								</div>
+								<div class="main-block__item item-main">
+									<div class="item-main__image-ibg">
+										<img src="img/main/image2.svg" alt="">
+									</div>
+									<div class="item-main__label">Работаем на вынос</div>
+								</div>
+								<div class="main-block__item item-main">
+									<div class="item-main__image-ibg">
+										<img src="img/main/image3.svg" alt="">
+									</div>
+									<div class="item-main__label">Быстрая доставка</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-block__image">
+					<picture><source srcset="img/main/cake-image1.webp" type="image/webp"><img src="img/main/cake-image1.png" alt=""></picture>
+					<picture><source srcset="img/main/cherry-top.webp" type="image/webp"><img class="main-block__cherry main-block__cherry_1" src="img/main/cherry-top.png" alt=""></picture>
+					<picture><source srcset="img/main/cherry-top-left.webp" type="image/webp"><img class="main-block__cherry main-block__cherry_2" src="img/main/cherry-top-left.png" alt=""></picture>
+					<picture><source srcset="img/main/cherry-bottom.webp" type="image/webp"><img class="main-block__cherry main-block__cherry_3" src="img/main/cherry-bottom.png" alt=""></picture>
+					<picture><source srcset="img/main/cherry-bottom-left.webp" type="image/webp"><img class="main-block__cherry main-block__cherry_4" src="img/main/cherry-bottom-left.png" alt=""></picture>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class=" about__container">
+					<h2 class="about__title title">Чем хорош горячий кекс</h2>
+					<div class="about__body">
+						<div class="about__left left-side">
+							<ul class="left-side__items left-side__items_left">
+								<li data-watch data-watch-once class="left-side__item left-side__item_margin-right-top item-left">
+									<span class="item-left__benefit item-left__benefit_max-width">Повышает настроение</span>
+									<img class="item-left__img" src="img/about/line-left.svg" alt="" />
+								</li>
+								<li data-watch data-watch-once class="left-side__item left-side__item_padding-right-center item-left">
+									<span class="item-left__benefit item-left__benefit_max-width">Быстро утоляет голод</span>
+									<img class="item-left__img" src="img/about/line-left.svg" alt="" />
+								</li>
+								<li data-watch data-watch-once class="left-side__item left-side__item_margin-right-bottom item-left">
+									<span class="item-left__benefit item-left__benefit_max-width">Источает нежный аромат</span>
+									<img class="item-left__img" src="img/about/line-left.svg" alt="" />
+								</li>
+							</ul>
+						</div>
+						<div class="about__image">
+							<div class="about__cake-image">
+								<picture><source srcset="img/about/cupcake-cherry.webp" type="image/webp"><img class="about__cake-img" src="img/about/cupcake-cherry.png" alt=""></picture>
+								<picture><source srcset="img/about/cherry1.webp" type="image/webp"><img class="about__cherry about__cherry_top" src="img/about/cherry1.png" alt=""></picture>
+								<picture><source srcset="img/about/cherry2.webp" type="image/webp"><img class="about__cherry about__cherry_bottom" src="img/about/cherry2.png" alt=""></picture>
+							</div>
+							<img class="about__circle" src="img/about/circle.svg" alt="">
+						</div>
+						<div class="about__right right-side">
+							<ul class="right-side__items right-side__items_right" data-da=".left-side, 991.8">
+								<li data-watch data-watch-once class="right-side__item right-side__item_margin-left-top item-right">
+									<span class="item-right__benefit item-right__benefit_padding-left">Насыщает энергией</span>
+									<img class="item-right__img" src="img/about/line-right.svg" alt="" />
+								</li>
+								<li data-watch data-watch-once class="right-side__item right-side__item_padding-left-center item-right">
+									<span class="item-right__benefit item-right__benefit_padding-left">Украсит любой стол</span>
+									<img class="item-right__img" src="img/about/line-right.svg" alt="" />
+								</li>
+								<li data-watch data-watch-once class="right-side__item right-side__item_margin-left-bottom item-right">
+									<span class="item-right__benefit item-right__benefit_padding-left">Всегда хочется еще</span>
+									<img class="item-right__img" src="img/about/line-right.svg" alt="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__bakery bakery">
+				<div class="bakery__container">
+					<div class="bakery__image" data-da=".bakery__body, 767.8, 1">
+						<picture><source srcset="img/bakery/cake-image.webp" type="image/webp"><img src="img/bakery/cake-image.png" alt=""></picture>
+						<picture><source srcset="img/bakery/strawberry-top1.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="50" data-prlx-dxr data-prlx-dyr data-prlx-cy="50" class="bakery__berry bakery__berry_1" src="img/bakery/strawberry-top1.png" alt=""></picture>
+						<picture><source srcset="img/bakery/strawberry-top2.webp" type="image/webp"><img data-prlx-mouse class="bakery__berry bakery__berry_2" src="img/bakery/strawberry-top2.png" alt=""></picture>
+						<picture><source srcset="img/bakery/strawberry-top3.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="30" class="bakery__berry bakery__berry_3" src="img/bakery/strawberry-top3.png" alt=""></picture>
+						<picture><source srcset="img/bakery/strawberry-bottom.webp" type="image/webp"><img data-prlx-mouse data-prlx-dyr data-prlx-cy="20" class="bakery__berry bakery__berry_5" src="img/bakery/strawberry-bottom.png" alt=""></picture>
+
+					</div>
+					<div class="bakery__body">
+						<h2 class="bakery__title title" id="about-us">О нашей кондитерской</h2>
+						<div class="bakery__text">
+							<p data-watch data-watch-once data-watch-threshold="0.7">Наша кондитерская выпекает вкусейшие кексы
+								с самыми
+								разнообразными начинками. В приготовлении мы используем только натуральные компоненты с
+								заботой
+								о
+								вашем здоровье.</p>
+							<p data-watch data-watch-once data-watch-threshold="0.7"> Попробовал наши кексы однажды, вы уже не
+								сможете забыть
+								их забыть. Изысканные рецепты, уютная атмосфера, вежливые официанты. Все это создано для вас
+								и
+								вашего удовольствия</p>
+						</div>
+						<div class="bakery__items" data-da=".bakery, 1220">
+							<div data-watch data-watch-once data-watch-threshold="0.5" class="bakery__item item-bakery">
+								<div class="item-bakery__image-ibg">
+									<img src="img/bakery/icon1.svg" alt="">
+								</div>
+								<div class="item-bakery__text">
+									Работаем с 2012 года
+									И знаем толк в кексах
+								</div>
+							</div>
+							<div data-watch data-watch-once data-watch-threshold="0.5" class="bakery__item item-bakery">
+								<div class="item-bakery__image-ibg">
+									<img src="img/bakery/icon2.svg" alt="">
+								</div>
+								<div class="item-bakery__text">
+									Используем самые
+									современные печи
+
+								</div>
+							</div>
+							<div data-watch data-watch-once data-watch-threshold="0.5" class="bakery__item item-bakery">
+								<div class="item-bakery__image-ibg">
+									<img src="img/bakery/icon3.svg" alt="">
+								</div>
+								<div class="item-bakery__text">
+									Дорожим каждым
+									нашим клиентом
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__catalog catalog">
+				<div class=" catalog__container">
+					<h2 class="catalog__title title" id="catalog">Каталог кексов</h2>
+					<div data-tabs class="catalog__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="submit" class="tabs__title _tab-active "> Популярные</button>
+							<button type="submit" class="tabs__title">Ореховые</button>
+							<button type="submit" class="tabs__title ">Шоколадные</button>
+							<button type="submit" class="tabs__title">Фруктовые</button>
+							<button type="submit" class="tabs__title">Ягодные</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image1.webp" type="image/webp"><img src="img/catalog/image1.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Черничный бриз”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">120 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image2.webp" type="image/webp"><img src="img/catalog/image2.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Вишневый ураган”</div>
+												<div class="item-tabs__desc">100 гр./ 110 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image3.webp" type="image/webp"><img src="img/catalog/image3.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Клубничная бомба”</div>
+												<div class="item-tabs__desc">100 гр./ 150 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">140 р.</div>
+												<div class=" item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image4.webp" type="image/webp"><img src="img/catalog/image4.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Воздушное блаженство”</div>
+												<div class="item-tabs__desc">100 гр./ 100 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image5.webp" type="image/webp"><img src="img/catalog/image5.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Фруктовая гармония”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">150 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image6.webp" type="image/webp"><img src="img/catalog/image6.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Шоколадная феерия”</div>
+												<div class="item-tabs__desc">100 гр./ 160 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">130 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image4.webp" type="image/webp"><img src="img/catalog/image4.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Воздушное блаженство”</div>
+												<div class="item-tabs__desc">100 гр./ 100 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image6.webp" type="image/webp"><img src="img/catalog/image6.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Шоколадная феерия”</div>
+												<div class="item-tabs__desc">100 гр./ 160 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">130 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image1.webp" type="image/webp"><img src="img/catalog/image1.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Черничный бриз”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">120 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image2.webp" type="image/webp"><img src="img/catalog/image2.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Вишневый ураган”</div>
+												<div class="item-tabs__desc">100 гр./ 110 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image3.webp" type="image/webp"><img src="img/catalog/image3.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Клубничная бомба”</div>
+												<div class="item-tabs__desc">100 гр./ 150 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">140 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image1.webp" type="image/webp"><img src="img/catalog/image1.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Черничный бриз”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">120 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image5.webp" type="image/webp"><img src="img/catalog/image5.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Фруктовая гармония”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">150 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image6.webp" type="image/webp"><img src="img/catalog/image6.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Шоколадная феерия”</div>
+												<div class="item-tabs__desc">100 гр./ 160 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">130 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image3.webp" type="image/webp"><img src="img/catalog/image3.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Клубничная бомба”</div>
+												<div class="item-tabs__desc">100 гр./ 150 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">140 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image4.webp" type="image/webp"><img src="img/catalog/image4.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Воздушное блаженство”</div>
+												<div class="item-tabs__desc">100 гр./ 100 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image5.webp" type="image/webp"><img src="img/catalog/image5.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Фруктовая гармония”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">150 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image6.webp" type="image/webp"><img src="img/catalog/image6.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Шоколадная феерия”</div>
+												<div class="item-tabs__desc">100 гр./ 160 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">130 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image1.webp" type="image/webp"><img src="img/catalog/image1.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Черничный бриз”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">120 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image2.webp" type="image/webp"><img src="img/catalog/image2.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Вишневый ураган”</div>
+												<div class="item-tabs__desc">100 гр./ 110 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image1.webp" type="image/webp"><img src="img/catalog/image1.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Черничный бриз”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">120 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image5.webp" type="image/webp"><img src="img/catalog/image5.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Фруктовая гармония”</div>
+												<div class="item-tabs__desc">100 гр./ 120 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">150 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image6.webp" type="image/webp"><img src="img/catalog/image6.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Шоколадная феерия”</div>
+												<div class="item-tabs__desc">100 гр./ 160 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">130 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image2.webp" type="image/webp"><img src="img/catalog/image2.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Вишневый ураган”</div>
+												<div class="item-tabs__desc">100 гр./ 110 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image3.webp" type="image/webp"><img src="img/catalog/image3.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Клубничная бомба”</div>
+												<div class="item-tabs__desc">100 гр./ 150 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">140 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__item item-tabs">
+										<div class="item-tabs__image-ibg">
+											<picture><source srcset="img/catalog/image4.webp" type="image/webp"><img src="img/catalog/image4.png" alt=""></picture>
+										</div>
+										<div class="item-tabs__body">
+											<div class="item-tabs__top">
+												<div class="item-tabs__rating">
+													<div class="rating rating_set">
+														<div class="rating__body">
+															<div class="rating__active"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
+														</div>
+														<div class="rating__value">3.6</div>
+													</div>
+												</div>
+												<div class="item-tabs__label">“Воздушное блаженство”</div>
+												<div class="item-tabs__desc">100 гр./ 100 ккал.</div>
+											</div>
+											<div class="item-tabs__bottom">
+												<div class="item-tabs__price">100 р.</div>
+												<div class="item-tabs__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+												<a href="#/" class="item-tabs__cart">
+												</a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__content">
+						<div class="contact__body">
+							<h2 class="contact__title title" id="delivery">Хотите горячего кекса?</h2>
+							<div class="contact__subtitle">Заполните форму и наш консультант
+								свяжется с вами и ответит на все интересующие вас вопросы. </div>
+							<form method="get" class="contact__form">
+								<div class="contact__input">
+									<input class="tel" autocomplete="off" type="tel" name="form[phone]" data-error="Ошибка" required placeholder="+7 (___) ___-__-__">
+								</div>
+								<button type="submit" class=" contact__button button">Заказать кекс</button>
+							</form>
+						</div>
+					</div>
+					<div class="contact__image " data-da=".contact__body, 767.8, 1">
+						<picture><source srcset="img/contact/cake-image.webp" type="image/webp"><img src="img/contact/cake-image.png" alt=""></picture>
+						<picture><source srcset="img/contact/raspberry1.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="40" data-prlx-dxr class="contact__berry contact__berry_1" src="img/contact/raspberry1.png" alt=""></picture>
+						<picture><source srcset="img/contact/raspberry2.webp" type="image/webp"><img data-prlx-mouse class="contact__berry contact__berry_2" src="img/contact/raspberry2.png" alt=""></picture>
+						<picture><source srcset="img/contact/raspberry3.webp" type="image/webp"><img data-prlx-mouse data-prlx-dxr data-prlx-cx="40" class="contact__berry contact__berry_3" src="img/contact/raspberry3.png" alt=""></picture>
+						<picture><source srcset="img/contact/raspberry4.webp" type="image/webp"><img data-prlx-mouse class="contact__berry contact__berry_4" src="img/contact/raspberry4.png" alt=""></picture>
+						<picture><source srcset="img/contact/raspberry5.webp" type="image/webp"><img data-prlx-mouse data-prlx-dyr data-prlx-cy="20" class="contact__berry contact__berry_5" src="img/contact/raspberry5.png" alt=""></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__confectioners confectioners">
+				<div class="confectioners__container">
+					<div class="confectioners__body">
+						<h2 class="confectioners__title title">Наши кондитеры</h2>
+						<div class="confectioners-about">
+							<div class="confectioners-about__swiper">
+								<div class="confectioners-about__slide">
+									<div class="confectioners-about__name">Сергей Галаев
+									</div>
+									<div class="confectioners-about__desc">
+										<p>Основатель и шеф-повар кондитерской.
+											Стаж работы 20 лет. Проходил стажировку в пекарнях и кондитерских Франции.
+										</p>
+										<p>Виртуозный кондитер, который разработал более 30 авторских вариантов кексов
+											с самыми разными начинками.</p>
+									</div>
+								</div>
+								<div class="confectioners-about__slide">
+									<div class="confectioners-about__name">Алина Пирогова
+									</div>
+									<div class="confectioners-about__desc">
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate alias ducimus
+											vitae nihil dolorum autem eius rerum iusto quos? Incidunt cum labore mollitia dolor
+											omnis officia unde quia illo at.
+										</p>
+
+									</div>
+								</div>
+								<div class="confectioners-about__slide">
+									<div class="confectioners-about__name">Ирина Савина
+									</div>
+									<div class="confectioners-about__desc">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur cumque asperiores
+											ad consectetur facilis minima.
+										</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quia!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#/" class="confectioners__button button">Подробнее</a>
+						<div class="confectioners__controll">
+							<button type="button" class="confectioners__prev">
+							</button>
+							<button type="button" class="confectioners__next">
+							</button>
+						</div>
+
+					</div>
+					<div class="confectioners-slider" data-da=".confectioners__body, 991.8, 2">
+						<div class="confectioners-slider__swiper ">
+							<div class="confectioners-slider__slide slide">
+								<div class="slide__image-ibg">
+									<picture><source srcset="img/confectioners/image1-1.webp" type="image/webp"><img src="img/confectioners/image1-1.png" alt="Сергей Галаев"></picture>
+								</div>
+							</div>
+							<div class="confectioners-slider__slide slide">
+								<div class="slide__image-ibg">
+									<picture><source srcset="img/confectioners/image2-2.webp" type="image/webp"><img src="img/confectioners/image2-2.png" alt="Алина Пирогова"></picture>
+								</div>
+							</div>
+							<div class="confectioners-slider__slide slide">
+								<div class="slide__image-ibg" style="max-width: 350px;">
+									<picture><source srcset="img/confectioners/image3-3.webp" type="image/webp"><img src="img/confectioners/image3-3.png" alt="Ирина Савина"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="confectioners__pagination"></div>
+					</div>
+					<div class=" confectioners-thumb">
+						<div class="confectioners-thumb__swiper">
+							<div class="confectioners-thumb__slide">
+								<div class="confectioners-thumb__image-ibg">
+									<picture><source srcset="img/confectioners/image1-1.webp" type="image/webp"><img src="img/confectioners/image1-1.png" alt="Сергей Галаев"></picture>
+								</div>
+								<div class="confectioners-thumb__name">Сергей Галаев</div>
+							</div>
+							<div class="confectioners-thumb__slide">
+								<div class="confectioners-thumb__image-ibg">
+									<picture><source srcset="img/confectioners/image2-2.webp" type="image/webp"><img src="img/confectioners/image2-2.png" alt="Алина Пирогова"></picture>
+								</div>
+								<div class="confectioners-thumb__name">Алина Пирогова</div>
+							</div>
+							<div class="confectioners-thumb__slide">
+								<div class="confectioners-thumb__image-ibg">
+									<picture><source srcset="img/confectioners/image3-3.webp" type="image/webp"><img src="img/confectioners/image3-3.png" alt="Ирина Савина"></picture>
+								</div>
+								<div class=" confectioners-thumb__name">Ирина Савина
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__gallery gallery">
+				<div class="gallery__container">
+					<h2 class="gallery__title title">Аппетитная галерея</h2>
+					<div data-gallery class="gallery__items">
+						<a href="img/gallery/image1-full.jpg" class="gallery__item gallery__item_1">
+							<picture><source srcset="img/gallery/image1.webp" type="image/webp"><img src="img/gallery/image1.jpg" alt=""></picture>
+						</a>
+						<a href="img/gallery/image2-full.jpg" class="gallery__item gallery__item_2">
+							<picture><source srcset="img/gallery/image2.webp" type="image/webp"><img src="img/gallery/image2.jpg" alt=""></picture>
+						</a>
+						<a href="img/gallery/image3-full.jpg" class="gallery__item gallery__item_3">
+							<picture><source srcset="img/gallery/image3.webp" type="image/webp"><img src="img/gallery/image3.jpg" alt=""></picture>
+						</a>
+						<a href="img/gallery/image4-full.jpg" class="gallery__item gallery__item_4">
+							<picture><source srcset="img/gallery/image4.webp" type="image/webp"><img src="img/gallery/image4.jpg" alt=""></picture>
+						</a>
+						<a href="img/gallery/image5-full.jpg" class="gallery__item gallery__item_5">
+							<picture><source srcset="img/gallery/image5.webp" type="image/webp"><img src="img/gallery/image5.jpg" alt=""></picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__address address ">
+				<div class="address__container">
+					<h2 class="address__title title" id="contacts">Ждем вас в гости</h2>
+					<div id="map" class="address__map">
+
+					</div>
+					<div class="address__body">
+						<div class="address__item">
+							<p class="address__label">
+								<img src="img/address/locate.svg" alt=""> Адрес
+							</p>
+							<a href="https://goo.gl/maps/MYtov1uvExWih7Et6" target="_blank" class="address__text">г. Омск,
+								ул.Титова, д.35</a>
+						</div>
+						<div class="address__item">
+							<p class="address__label"> <img src="img/address/mail.svg" alt=""> Почта </p>
+							<a href="mailto:besthotcakes@mail.ru" class="address__text">besthotcakes@mail.ru</a>
+						</div>
+						<div class="address__item">
+							<p class="address__label">
+								<img src="img/address/phone.svg" alt="">
+								Телефон
+							</p>
+							<a href="tel:+79780966978" class="address__text">+7 (978) 096 6978</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__nav">
+					<a href="#/" class="footer__logo">
+						<img src="img/footer/logo.svg" alt="">
+					</a>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="#/" class="menu-footer__link" data-goto="#about-us" data-goto-header>О
+										нас</a></li>
+								<li class="menu-footer__item"><a href="#/" class="menu-footer__link" data-goto="#catalog" data-goto-header>Каталог</a>
+								</li>
+								<li class="menu-footer__item"><a href="#/" class="menu-footer__link" data-goto="#delivery" data-goto-header>Доставка</a></li>
+								<li class="menu-footer__item"><a href="#/" class="menu-footer__link" data-goto="#contacts" data-goto-header>Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__info">
+					<div class="footer__social">
+						<a href="#/"><img src="img/footer/vk.svg" alt=""></a>
+						<a href="#/"><img src="img/footer/instagram.svg" alt=""></a>
+					</div>
+					<a href="#/" class="footer__copyright">Политика конфинденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20220222113226"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFajtEymlqGdFnfWklbNnlvYHuA6LIqpk&callback=initMap&libraries=&v=weekly&_v=20220222113226" async></script>
+</body>
+
+</html>
